@@ -1,0 +1,215 @@
+# > https://github.com/whyFeelSad/ProxyRules
+# > 2025-01-12
+
+proxy-groups:
+  - {
+      name: Proxy,
+      type: select,
+      include-all: true,
+      icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png,
+    }
+  - {
+      name: LLM,
+      type: select,
+      proxies: [Proxy, JPN, USA, SGP],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png,
+    }
+  - {
+      name: Google,
+      type: select,
+      proxies: [Proxy, HKG, TWN, JPN, USA, SGP, KOR],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png,
+    }
+  - {
+      name: YouTube,
+      type: select,
+      proxies: [Proxy, HKG, TWN, JPN, USA, SGP, KOR],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png,
+    }
+  - {
+      name: Telegram,
+      type: select,
+      proxies: [Proxy, HKG, TWN, JPN, USA, SGP, KOR],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png,
+    }
+  - {
+      name: IP Attributes,
+      type: select,
+      proxies: [DIRECT, Proxy, HKG, TWN, JPN, USA, SGP, KOR],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/airport.png,
+    }
+  - {
+      name: AdBlock,
+      type: select,
+      proxies: [REJECT, DIRECT],
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Adblock.png,
+    }
+  - {
+      name: HKG,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇭🇰|港|香港|HK|Hongkong|HKG",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/HK.png,
+    }
+  - {
+      name: TWN,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇹🇼|台|台湾|TW|Taiwan|TWN",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/TW.png,
+    }
+  - {
+      name: JPN,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇯🇵|日|日本|JP|Japan|JPN",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/JP.png,
+    }
+  - {
+      name: KOR,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇰🇷|韩|韩国|Korea|KR|KOR",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/KR.png,
+    }
+  - {
+      name: SGP,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇸🇬|新加坡|SG|Singapore|SGP",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/SG.png,
+    }
+  - {
+      name: USA,
+      type: url-test,
+      pinclude-all: true,
+      interval: 600,
+      tolerance: 50,
+      filter: "🇺🇸|美|美国|US|United States|USA",
+      icon: https://github.com/Orz-3/mini/raw/master/Color/US.png,
+    }
+
+rule-providers:
+  AdBlock:
+    {
+      behavior: domain,
+      interval: 86400,
+      format: text,
+      type: http,
+      url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt,
+      path: ./ruleset/adrules_domainset.txt,
+    }
+  OpenAi:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/OpenAI/OpenAI.yaml,
+      path: ./ruleset/OpenAi.yaml,
+    }
+  Google:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Google/Google.yaml,
+      path: ./ruleset/Google.yaml,
+    }
+  YouTube:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/YouTube/YouTube.yaml,
+      path: ./ruleset/YouTube.yaml,
+    }
+  Telegram:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Telegram/Telegram.yaml,
+      path: ./ruleset/Telegram.yaml,
+    }
+  ProxyLite:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/ProxyLite/ProxyLite.yaml,
+      path: ./ruleset/ProxyLite.yaml,
+    }
+  Direct:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Direct/Direct.yaml,
+      path: ./ruleset/Direct.yaml,
+    }
+  Lan:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Lan/Lan.yaml,
+      path: ./ruleset/Lan.yaml,
+    }
+  Download:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/blackmatrix7/ios_rule_script/raw/master/rule/Clash/Download/Download.yaml,
+      path: ./ruleset/Download.yaml,
+    }
+  ChinaIP:
+    {
+      behavior: ipcidr,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://ghp.ci/https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml,
+      path: ./ruleset/ChinaIP.yaml,
+    }
+  IP-Attribution:
+    {
+      behavior: classical,
+      interval: 86400,
+      format: yaml,
+      type: http,
+      url: https://github.com/SunsetMkt/anti-ip-attribution/raw/refs/heads/main/generated/rule-provider.yaml,
+      path: ./ruleset/rule-provider.yaml,
+    }
+rules:
+  - RULE-SET,AdBlock,AdBlock
+  - RULE-SET,OpenAi,LLM
+  - RULE-SET,Google,Google
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,IP-Attribution,IP Attributes
+  - RULE-SET,ProxyLite,Proxy
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,ChinaIP,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
