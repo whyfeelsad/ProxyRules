@@ -47,7 +47,7 @@ proxy-groups:
   - {
       name: HKG,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇭🇰|港|香港|HK|Hongkong|HKG",
@@ -56,7 +56,7 @@ proxy-groups:
   - {
       name: TWN,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇹🇼|台|台湾|TW|Taiwan|TWN",
@@ -65,7 +65,7 @@ proxy-groups:
   - {
       name: JPN,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇯🇵|日|日本|JP|Japan|JPN",
@@ -74,7 +74,7 @@ proxy-groups:
   - {
       name: KOR,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇰🇷|韩|韩国|Korea|KR|KOR",
@@ -83,7 +83,7 @@ proxy-groups:
   - {
       name: SGP,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇸🇬|新加坡|SG|Singapore|SGP",
@@ -92,7 +92,7 @@ proxy-groups:
   - {
       name: USA,
       type: url-test,
-      pinclude-all: true,
+      include-all: true,
       interval: 600,
       tolerance: 50,
       filter: "🇺🇸|美|美国|US|United States|USA",
