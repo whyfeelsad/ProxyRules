@@ -11,31 +11,31 @@ proxy-groups:
   - {
       name: LLM,
       type: select,
-      proxies: [Proxy, Auto, JPN, USA, SGP],
+      proxies: [Auto, Proxy, JPN, USA, SGP],
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png,
     }
   - {
       name: Google,
       type: select,
-      proxies: [Proxy, Auto, HKG, TWN, JPN, USA, SGP, KOR],
+      proxies: [Auto, Proxy, HKG, TWN, JPN, USA, SGP, KOR],
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Google.png,
     }
   - {
       name: YouTube,
       type: select,
-      proxies: [Proxy, Auto, HKG, TWN, JPN, USA, SGP, KOR],
+      proxies: [Auto, Proxy, HKG, TWN, JPN, USA, SGP, KOR],
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/YouTube.png,
     }
   - {
       name: Telegram,
       type: select,
-      proxies: [Proxy, Auto, HKG, TWN, JPN, USA, SGP, KOR],
+      proxies: [Auto, Proxy, HKG, TWN, JPN, USA, SGP, KOR],
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png,
     }
   - {
       name: IP Attributes,
       type: select,
-      proxies: [DIRECT, Proxy, Auto, HKG, TWN, JPN, USA, SGP, KOR],
+      proxies: [DIRECT, Auto, Proxy, HKG, TWN, JPN, USA, SGP, KOR],
       icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/airport.png,
     }
   - {
