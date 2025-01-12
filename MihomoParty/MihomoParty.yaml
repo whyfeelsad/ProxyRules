@@ -98,7 +98,12 @@ proxy-groups:
       filter: "🇺🇸|美|美国|US|United States|USA",
       icon: https://github.com/Orz-3/mini/raw/master/Color/US.png,
     }
-
+  - {
+      name: Auto,
+      type: url-test,
+      include-all: true,
+      icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Final.png,
+    }
 rule-providers:
   AdBlock:
     {
