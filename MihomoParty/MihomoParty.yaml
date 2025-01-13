@@ -6,7 +6,7 @@ proxy-groups:
       name: Proxy,
       type: select,
       include-all: true,
-      icon: https://ghp.ci/https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png,
+      icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png,
     }
   - {
       name: LLM,
